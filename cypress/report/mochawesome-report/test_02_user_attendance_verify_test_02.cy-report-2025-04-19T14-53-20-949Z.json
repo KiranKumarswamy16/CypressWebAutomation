@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-04-19T14:53:30.944Z",
+    "end": "2025-04-19T14:55:51.116Z",
+    "duration": 140172,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4020434e-ca67-4056-81be-8dd9dd18418f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test_02_user_attendance_verify_test_02.cy.js",
+      "file": "cypress\\e2e\\test_02_user_attendance_verify_test_02.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5434f000-32cf-4e11-91e0-629f67ac8181",
+          "title": "attendance tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User Attendance PunchIn Validation 01",
+              "fullTitle": "attendance tests User Attendance PunchIn Validation 01",
+              "timedOut": null,
+              "duration": 101251,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginWithValidUser();\n(0, _utils.waitForElementToLoad)(1500);\ndashboardPage.clickOnDashboardSubMenu();\n// cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\")\n(0, _utils.assertText)(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchedOutValidationText);\ndashboardPage.clickOnAttendancePunchInClockButton();\n(0, _utils.assertText)(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchInValidationText);\nattendancePage.enterAttendancePunchInNote(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchInNote);\nattendancePage.clickOnPunchInButton();\n(0, _utils.assertText)(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchInNote);\n(0, _utils.assertText)(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchOutValidationText);\n(0, _utils.waitForElementToLoad)(66000);\ndashboardPage.clickOnDashboardSubMenu();\n(0, _utils.waitForElementToLoad)(1500);\n// attendancePage.clickOnPunchOutButton()\n// assertText(attendanceData.attendancePunchInPunchOutCase1.attendancePunchOutValidation)\nloginPage.clickOnUserLogDropdown();\n(0, _utils.waitForElementToLoad)();\nloginPage.clickOnLogut();\n(0, _utils.assertText)(_projectConstants.PAGE_TITLES.login);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Forgot your password?' but never did.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Forgot your password?' but never did.\n    at assertText (webpack://orangehrmautomation/./cypress/support/utils.js:24:7)\n    at Context.eval (webpack://orangehrmautomation/./cypress/e2e/test_02_user_attendance_verify_test_02.cy.js:80:19)",
+                "diff": null
+              },
+              "uuid": "2f90291f-f4cb-498d-b8fe-598e79ca92c8",
+              "parentUUID": "5434f000-32cf-4e11-91e0-629f67ac8181",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User Attendance PunchIn Validation 01",
+              "fullTitle": "attendance tests User Attendance PunchIn Validation 01",
+              "timedOut": null,
+              "duration": 31780,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginWithValidUser();\n(0, _utils.waitForElementToLoad)(1500);\ndashboardPage.clickOnDashboardSubMenu();\n(0, _utils.assertText)(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchedInValidationText);\n// cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\")\ndashboardPage.clickOnAttendancePunchInClockButton();\n(0, _utils.assertText)(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchOutValidationText);\nattendancePage.enterAttendancePunchInNote(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchOutNote);\nattendancePage.clickOnPunchOutButton();\n// attendancePage.clickOnPunchInButton()\n(0, _utils.assertText)(attendanceData.attendancePunchInPunchOutCase1.employeeAttendancePunchInValidationText);\n(0, _utils.waitForElementToLoad)(1500);\n// attendancePage.clickOnPunchOutButton()\n// assertText(attendanceData.attendancePunchInPunchOutCase1.attendancePunchOutValidation)\ndashboardPage.clickOnDashboardSubMenu();\n(0, _utils.waitForElementToLoad)(1500);\nloginPage.clickOnUserLogDropdown();\n(0, _utils.waitForElementToLoad)();\nloginPage.clickOnLogut();\n(0, _utils.assertText)(_projectConstants.PAGE_TITLES.login);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Forgot your password?' but never did.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Forgot your password?' but never did.\n    at assertText (webpack://orangehrmautomation/./cypress/support/utils.js:24:7)\n    at Context.eval (webpack://orangehrmautomation/./cypress/e2e/test_02_user_attendance_verify_test_02.cy.js:109:17)",
+                "diff": null
+              },
+              "uuid": "4b4862d5-0ac3-441f-9aa8-ca60ac611508",
+              "parentUUID": "5434f000-32cf-4e11-91e0-629f67ac8181",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2f90291f-f4cb-498d-b8fe-598e79ca92c8",
+            "4b4862d5-0ac3-441f-9aa8-ca60ac611508"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 133031,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
